@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - Big Three Performance</title>
-    <script type="module" src="../assets/js/main.js"></script>
-    <link rel="stylesheet" href="../assets/css/output.css">
+    <script type="module" src="/frontend/assets/js/main.js"></script>
+    <link rel="stylesheet" href="/frontend/assets/css/output.css">
 </head>
 <body class="bg-gray-100 text-gray-900">
 
     <!-- Sticky Navbar -->
     <nav id="navbar" class="fixed top-0 left-0 w-full bg-gray-900 text-white flex justify-between items-center p-4 shadow-md z-50">
         <a href="index.html">
-            <img src="../assets/images/logo.png" alt="Big Three Performance Logo" class="h-16"> 
+            <img src="/frontend/assets/images/logo.png" alt="Big Three Performance Logo" class="h-16"> 
         </a>
         <ul class="flex space-x-6">
             <li><a href="index.html" class="nav-link">Home</a></li>
@@ -55,9 +55,9 @@
         <div class="flex overflow-hidden">
             <button onclick="prevSlide()" class="absolute left-0 bg-black text-white p-2 rounded-l-lg">❮</button>
             <div id="gallery-slider" class="flex space-x-4 transition-transform duration-500">
-                <img src="../assets/images/s54-1.jpg" class="gallery-img">
-                <img src="../assets/images/m50-1.jpg" class="gallery-img">
-                <img src="../assets/images/e36-ute.jpg" class="gallery-img">
+                <img src="/frontend/assets/images/s54-1.jpg" class="gallery-img">
+                <img src="/frontend/assets/images/m50-1.jpg" class="gallery-img">
+                <img src="/frontend/assets/images/e36-ute.jpg" class="gallery-img">
             </div>
             <button onclick="nextSlide()" class="absolute right-0 bg-black text-white p-2 rounded-r-lg">❯</button>
         </div>
@@ -66,15 +66,15 @@
     <!-- Grid Section (Centered) -->
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12 max-w-5xl mx-auto">
         <div class="relative">
-            <img src="../assets/images/s54-2.jpg" class="gallery-img">
+            <img src="/frontend/assets/images/s54-2.jpg" class="gallery-img">
             <p class="absolute bottom-2 left-2 bg-gray-900 text-white px-3 py-1 rounded">S54-Swapped E30</p>
         </div>
         <div class="relative">
-            <img src="../assets/images/m50-2.jpg" class="gallery-img">
+            <img src="/frontend/assets/images/m50-2.jpg" class="gallery-img">
             <p class="absolute bottom-2 left-2 bg-gray-900 text-white px-3 py-1 rounded">Routine Oil Change</p>
         </div>
         <div class="relative">
-            <img src="../assets/images/e36-ute.jpg" class="gallery-img">
+            <img src="/frontend/assets/images/e36-ute.jpg" class="gallery-img">
             <p class="absolute bottom-2 left-2 bg-gray-900 text-white px-3 py-1 rounded">Custom E36 Ute Build</p>
         </div>
     </div>
@@ -94,9 +94,9 @@
 <!-- Scrollable Image Gallery -->
 <div class="relative w-full overflow-hidden mt-12">
     <div id="scroll-gallery" class="flex space-x-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory">
-        <img src="../assets/images/s54-e30-2.jpg" class="rounded shadow-lg max-w-xs snap-center">
-        <img src="../assets/images/oil-change-2.jpg" class="rounded shadow-lg max-w-xs snap-center">
-        <img src="../assets/images/e36-ute-2.jpg" class="rounded shadow-lg max-w-xs snap-center">
+        <img src="/frontend/assets/images/s54-e30-2.jpg" class="rounded shadow-lg max-w-xs snap-center">
+        <img src="/frontend/assets/images/oil-change-2.jpg" class="rounded shadow-lg max-w-xs snap-center">
+        <img src="/frontend/assets/images/e36-ute-2.jpg" class="rounded shadow-lg max-w-xs snap-center">
     </div>
     <button onclick="scrollLeft()" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white px-3 py-2">❮</button>
     <button onclick="scrollRight()" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white px-3 py-2">❯</button>
