@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Navbar Shrinking on Scroll */
+#navbar {
+    transition: all 0.3s ease-in-out;
+}
+.shrink {
+    padding: 8px 16px;
+}
+.shrink img {
+    height: 50px !important;
+}
+
+/* Ensures page content isn’t hidden under navbar */
+body {
+    padding-top: 80px;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.gallery-item {
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+}
+
+/* Fixes text overlay for hover effect */
+.overlay-text {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.gallery-item:hover .overlay-text {
+    opacity: 1;
+}
+
+
+
+/* Active Page Underline */
+.nav-link {
+    @apply relative pb-2 text-white after:block after:content-[''] after:w-full after:h-0.5 
+           after:bg-blue-500 after:absolute after:left-0 after:bottom-0 
+           after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100;
+}
+.nav-link.active {
+    @apply after:scale-x-100 font-bold text-blue-400;
+}
+
+.carousel-btn {
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}

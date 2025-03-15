@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Big Three Performance</title>
+    <script type="module" src="../assets/js/main.js"></script>
+    <link rel="stylesheet" href="../assets/css/output.css">
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full bg-gray-900 text-white flex justify-between items-center p-4 shadow-md z-50">
+        <a href="index.html">
+            <img src="../assets/images/logo.png" alt="Big Three Performance Logo" class="h-16"> 
+        </a>
+        <ul class="flex space-x-6">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="projects.html" class="nav-link active">Projects</a></li>
+            <li><a href="faq.html" class="nav-link">FAQ</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative w-full h-64 bg-gray-800 flex items-center justify-center">
+        <h1 class="text-5xl font-bold text-white">Project Builds</h1>
+    </header>
+
+    <!-- Project Sections -->
+    <section class="p-8 text-center">
+        <h2 class="text-3xl font-bold text-gray-800">Showcasing Logan’s Builds</h2>
+
+        <!-- S54 E30 Swap -->
+        <div class="mt-12 bg-white p-6 rounded-lg shadow-md max-w-4xl mx-auto">
+            <h3 class="text-2xl font-semibold text-gray-800">S54-Swapped E30</h3>
+            <p class="text-gray-700 mt-2">This project features a fully swapped S54 engine into a classic E30 chassis.</p>
+            <div class="carousel mt-4">
+                <button onclick="prevSlide('s54')" class="carousel-btn">❮</button>
+                <img id="s54-img" src="../assets/images/s54-1.jpg" class="rounded w-full h-auto">
+                <button onclick="nextSlide('s54')" class="carousel-btn">❯</button>
+            </div>
+        </div>
+
+        <!-- M50 Turbo Drift Car -->
+        <div class="mt-12 bg-white p-6 rounded-lg shadow-md max-w-4xl mx-auto">
+            <h3 class="text-2xl font-semibold text-gray-800">M50 Turbo Drift Car</h3>
+            <p class="text-gray-700 mt-2">A purpose-built drift car featuring a turbocharged M50 engine for maximum power.</p>
+            <div class="carousel mt-4">
+                <button onclick="prevSlide('m50')" class="carousel-btn">❮</button>
+                <img id="m50-img" src="../assets/images/m50-1.jpg" class="rounded w-full h-auto">
+                <button onclick="nextSlide('m50')" class="carousel-btn">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Inquiry Section -->
+<section class="p-8 bg-gray-800 text-center text-white mt-12">
+    <h2 class="text-3xl font-bold">Interested in a Custom Build?</h2>
+    <p class="text-lg mt-2 max-w-2xl mx-auto">
+        Have a project in mind? Whether it's a swap, turbo build, or a full performance setup, let's make it happen.
+        Contact Logan to discuss your custom build!
+    </p>
+    <a href="contact.html" class="mt-4 inline-block bg-bmwRed hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition">
+        Ask About a Build
+    </a>
+</section>
+
+    <script>
+        const projectImages = {
+            s54: ["../assets/images/s54-1.jpg", "../assets/images/s54-2.jpg"],
+            m50: ["../assets/images/m50-1.jpg", "../assets/images/m50-2.jpg"]
+        };
+
+        let currentIndexes = { s54: 0, m50: 0 };
+
+        function nextSlide(project) {
+            currentIndexes[project] = (currentIndexes[project] + 1) % projectImages[project].length;
+            document.getElementById(`${project}-img`).src = projectImages[project][currentIndexes[project]];
+        }
+
+        function prevSlide(project) {
+            currentIndexes[project] = (currentIndexes[project] - 1 + projectImages[project].length) % projectImages[project].length;
+            document.getElementById(`${project}-img`).src = projectImages[project][currentIndexes[project]];
+        }
+    </script>
+
+    <!-- Footer -->
+    <footer class="p-6 bg-gray-900 text-center text-white mt-12">
+        <p>© 2025 Big Three Performance. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
