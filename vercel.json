@@ -1,12 +1,12 @@
 {
-  "rewrites": [
-    { "source": "/", "destination": "/frontend/pages/index.html" },
-    { "source": "/about", "destination": "/frontend/pages/about.html" },
-    { "source": "/services", "destination": "/frontend/pages/services.html" },
-    { "source": "/gallery", "destination": "/frontend/pages/gallery.html" },
-    { "source": "/projects", "destination": "/frontend/pages/projects.html" },
-    { "source": "/faq", "destination": "/frontend/pages/faq.html" },
-    { "source": "/contact", "destination": "/frontend/pages/contact.html" }
+  "routes": [
+    { "src": "/$", "dest": "/frontend/pages/index.html" },
+    { "src": "/about", "dest": "/frontend/pages/about.html" },
+    { "src": "/services", "dest": "/frontend/pages/services.html" },
+    { "src": "/gallery", "dest": "/frontend/pages/gallery.html" },
+    { "src": "/projects", "dest": "/frontend/pages/projects.html" },
+    { "src": "/faq", "dest": "/frontend/pages/faq.html" },
+    { "src": "/contact", "dest": "/frontend/pages/contact.html" }
   ],
   "builds": [
     { "src": "frontend/pages/**/*.html", "use": "@vercel/static" },
