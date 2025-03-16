@@ -149,12 +149,6 @@ body {
     margin-top: 10px;
 }
 
-.hero::before,
-.hero::after {
-    content: none !important;
-    display: none !important;
-}
-
 .btn {
     background: #E32D27;
     color: #fff;
@@ -413,7 +407,6 @@ body {
 /* === RESPONSIVE DESIGN === */
 @media (max-width: 768px) {
         .navbar {
-            position: fixed;
             flex-direction: row; /* Ensures navbar stays in a row */
             justify-content: space-between; /* Pushes logo left, links right */
             align-items: center;
@@ -440,14 +433,13 @@ body {
 
         /* Style for hamburger icon */
         .hamburger-menu {
-            display: none;
+            display: block;
             font-size: 30px;
             cursor: pointer;
             color: white;
             position: absolute;
             right: 20px;
             top: 25px;
-            z-index: 1100; /* Ensure it's on top of other elements */
         }
     
         .nav-links li {
