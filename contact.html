@@ -7,6 +7,7 @@
     <title>Contact Us - Big Three Performance</title>
     <script type="module" src="frontend/assets/js/main.js"></script>
     <link rel="stylesheet" href="frontend/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -16,6 +17,10 @@
             <a href="index.html" class="logo">
                 <img src="frontend/assets/images/b3plogo.png" alt="Big Three Performance Logo"> 
             </a>
+            <!-- Hamburger Menu Icon -->
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                ☰ <!-- Unicode hamburger icon -->
+            </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -32,31 +37,6 @@
     <header class="hero contact">
         <h1 class="fade-in">GET IN TOUCH WITH US</h1>
     </header>
-
-    <!-- Contact Information Section -->
-    <section class="section contact-info fade-in">
-        <h2>CONTACT INFORMATION</h2>
-        <div class="contact-grid">
-            <div class="contact-box">
-                <h3>📍 Address</h3>
-                <p>123 Performance St, Auto City, CA</p>
-            </div>
-            <div class="contact-box">
-                <h3>📞 Phone</h3>
-                <p>(555) 123-4567</p>
-            </div>
-            <div class="contact-box">
-                <h3>📧 Email</h3>
-                <p>contact@bigthreeperformance.com</p>
-            </div>
-            <div class="contact-box">
-                <h3>🕒 Business Hours</h3>
-                <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
-                <p>Saturday: 10:00 AM - 4:00 PM</p>
-                <p>Sunday: Closed</p>
-            </div>
-        </div>
-    </section>
 
     <!-- Contact Form Section -->
     <section class="section form-section fade-in">
@@ -80,6 +60,33 @@
             <button type="submit" class="btn">Send Message</button>
         </form>
     </section>
+
+    <!-- Contact Information Section -->
+    <section class="section contact-info fade-in">
+        <h2>CONTACT INFORMATION</h2>
+        <div class="contact-grid">
+            <div class="contact-box">
+                <h3>📍 Address</h3>
+                <p>123 Performance St, Auto City, CA</p>
+            </div>
+            <div class="contact-box">
+                <h3>📞 Phone</h3>
+                <p>(555) 123-4567</p>
+            </div>
+            <div class="contact-box">
+                <h3>📧 Email</h3>
+                <p>bigthreeperformance@gmail.com</p>
+            </div>
+            <div class="contact-box">
+                <h3>🕒 Business Hours</h3>
+                <p>Mon-Fri:</p>
+                <p>Saturday:</p>
+                <p>Sunday:</p>
+            </div>
+        </div>
+    </section>
+
+    
 
     <!-- Google Maps Integration -->
     <section class="section map-section fade-in">
