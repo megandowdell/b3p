@@ -28,60 +28,65 @@ body {
 }
 
 
-/* nav bar */
-
+/* === Navbar Styling === */
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background: #000;
     padding: 10px 30px;
     position: fixed;
     width: 100%;
     top: 0;
+    left: 0;
     z-index: 1000;
     border-bottom: 3px solid #E32D27;
-    height: 120px;
+    height: 80px;
 }
 
-.navbar .logo {
-    flex-shrink: 0; /* prevent shrinking */
+/* Container to keep logo and links properly spaced */
+.navbar .container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    height: 100%;
-
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
 }
 
+/* === Logo === */
 .navbar .logo img {
-    max-height: 90px;
+    max-height: 80px; /* Resize logo */
     width: auto;
     cursor: pointer;
 }
 
+/* === Navigation Links === */
 .nav-links {
-    list-style: none;
     display: flex;
-    align-items: center;
+    list-style: none;
     justify-content: flex-end;
-    height: 100%;
-    margin: 10px;
-    padding: 0
-
+    align-items: center;
+    gap: 20px; /* Add spacing between links */
+    padding: 0;
+    margin: 0;
 }
 
+/* Ensure links don't shrink */
 .nav-links li {
-    margin-left: 25px;
+    white-space: nowrap;
 }
 
 .nav-links a {
     text-decoration: none;
     color: #fff;
     font-size: 16px;
+    padding: 10px 15px;
     position: relative;
-    padding: 0;
-    margin-top: -10px;
+    transition: color 0.3s ease;
 }
 
+/* === Hover and Active Page Styling === */
 .nav-links a:hover::after,
 .nav-links .active::after {
     content: '';
@@ -93,9 +98,9 @@ body {
     left: 0;
 }
 
-/* === FIX FOR SPACING ISSUES === */
+/* === Fix Content Overlapping === */
 body {
-    padding-top: 70px; /* Ensures content doesn't get hidden behind navbar */
+    padding-top: 90px; /* Prevents navbar from covering content */
 }
 
 /* === HERO SECTIONS === */
@@ -373,14 +378,31 @@ body {
 
 /* === RESPONSIVE DESIGN === */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 15px;
-    }
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
+        .navbar {
+            flex-direction: row; /* Ensures navbar stays in a row */
+            justify-content: space-between; /* Pushes logo left, links right */
+            align-items: center;
+            padding: 15px 20px;
+        }
+    
+        .nav-links {
+            display: flex;
+            flex-direction: row; /* Keep links in a row */
+            justify-content: flex-end; /* Align to the right */
+            align-items: center;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+    
+        .nav-links li {
+            margin: 0; /* Remove margin that might cause shifting */
+        }
+    
+        .nav-links a {
+            font-size: 16px;
+            padding: 5px 10px;
+        }
     .social-container {
         flex-direction: column;
     }
