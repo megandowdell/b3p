@@ -39,27 +39,27 @@
     </header>
 
     <!-- Contact Form Section -->
-    <section class="section form-section fade-in">
-        <h2>SEND US A MESSAGE</h2>
-        <form class="contact-form">
-            <label>First Name</label>
-            <input type="text" required>
+<section class="section form-section fade-in">
+    <h2>SEND US A MESSAGE</h2>
+    <form class="contact-form" id="contactForm" action="https://formspree.io/f/mrbpbknk" method="POST">
+        <label>First Name</label>
+        <input type="text" name="first_name" required>
 
-            <label>Last Name</label>
-            <input type="text" required>
+        <label>Last Name</label>
+        <input type="text" name="last_name" required>
 
-            <label>Email</label>
-            <input type="email" required>
+        <label>Email</label>
+        <input type="email" name="email" required>
 
-            <label>Phone Number</label>
-            <input type="tel" required>
+        <label>Phone Number</label>
+        <input type="tel" name="phone" required>
 
-            <label>Message</label>
-            <textarea required></textarea>
+        <label>Message</label>
+        <textarea name="message" required></textarea>
 
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-    </section>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
 
     <!-- Contact Information Section -->
     <section class="section contact-info fade-in">
@@ -67,11 +67,11 @@
         <div class="contact-grid">
             <div class="contact-box">
                 <h3>📍 Address</h3>
-                <p>123 Performance St, Auto City, CA</p>
+                <p></p>
             </div>
             <div class="contact-box">
                 <h3>📞 Phone</h3>
-                <p>(555) 123-4567</p>
+                <p></p>
             </div>
             <div class="contact-box">
                 <h3>📧 Email</h3>
