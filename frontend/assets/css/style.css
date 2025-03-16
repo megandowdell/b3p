@@ -414,7 +414,6 @@ body {
 @media (max-width: 768px) {
         .navbar {
             position: fixed;
-            z-index: 1000;
             flex-direction: row; /* Ensures navbar stays in a row */
             justify-content: space-between; /* Pushes logo left, links right */
             align-items: center;
