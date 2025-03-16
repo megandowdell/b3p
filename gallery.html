@@ -1,165 +1,99 @@
+<!-- GALLERY PAGE - BIG THREE PERFORMANCE -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - Big Three Performance</title>
-    <script type="module" src="../assets/js/main.js"></script>
-    <link rel="stylesheet" href="../assets/css/output.css">
-    <style>
-        /* Ensures images are properly aligned */
-        .gallery-img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-
-        /* Flexbox centering for filters */
-        .filter-container {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 10px;
-        }
-
-        /* Improved slider layout */
-        .slider-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            max-width: 900px;
-            margin: 20px auto;
-        }
-
-        /* Centering grid section */
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        /* Adjusting spacing for captions */
-        .gallery-caption {
-            position: absolute;
-            bottom: 5px;
-            left: 5px;
-            background: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 5px 10px;
-            font-size: 14px;
-            border-radius: 4px;
-        }
-    </style>
+    <script type="module" src="frontend/assets/js/main.js"></script>
+    <link rel="stylesheet" href="frontend/assets/css/style.css">
 </head>
-<body class="bg-gray-100 text-gray-900">
-
+<body>
+    
     <!-- Navbar -->
-    <nav id="navbar" class="fixed top-0 left-0 w-full bg-gray-900 text-white flex justify-between items-center p-4 shadow-md z-50">
-        <a href="../index.html">
-            <img src="../assets/images/logo.png" alt="Big Three Performance Logo" class="h-16"> 
-        </a>
-        <ul class="flex space-x-6">
-            <li><a href="../index.html" class="nav-link">Home</a></li>
-            <li><a href="../about.html" class="nav-link">About</a></li>
-            <li><a href="../services.html" class="nav-link">Services</a></li>
-            <li><a href="../gallery.html" class="nav-link active">Gallery</a></li>
-            <li><a href="../projects.html" class="nav-link">Projects</a></li>
-            <li><a href="../faq.html" class="nav-link">FAQ</a></li>
-            <li><a href="../contact.html" class="nav-link">Contact</a></li>
-        </ul>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="frontend/assets/images/logo.png" alt="Big Three Performance Logo"> 
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="relative w-full h-64 bg-gray-800 flex items-center justify-center">
-        <h1 class="text-5xl font-bold text-white">Our Work in Action</h1>
+    <header class="hero gallery">
+        <h1 class="fade-in">OUR WORK IN ACTION</h1>
     </header>
 
     <!-- Introduction Section -->
-    <section class="p-8 text-center">
-        <p class="text-lg text-gray-700 max-w-2xl mx-auto">
-            Check out some of the builds, upgrades, and maintenance work we've completed. 
-            From full engine swaps to track-ready setups, we do it all.
-        </p>
+    <section class="section fade-in">
+        <p>Check out some of the builds, upgrades, and maintenance work we've completed.</p>
     </section>
 
     <!-- Filters -->
-    <div class="filter-container">
+    <div class="filter-container fade-in">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="performance">Performance Builds</button>
         <button class="filter-btn" data-filter="maintenance">Maintenance & Repairs</button>
         <button class="filter-btn" data-filter="custom">Custom Fabrication</button>
     </div>
 
-    <!-- Image Slider -->
-    <div class="slider-container">
-        <button onclick="prevSlide()" class="bg-black text-white px-3 py-2 rounded-l-lg">❮</button>
-        <div id="gallery-slider" class="flex overflow-hidden transition-transform duration-500">
-            <img src="../assets/images/s54-1.jpg" class="gallery-img">
-            <img src="../assets/images/m50-1.jpg" class="gallery-img">
-            <img src="../assets/images/e36-ute.jpg" class="gallery-img">
-        </div>
-        <button onclick="nextSlide()" class="bg-black text-white px-3 py-2 rounded-r-lg">❯</button>
-    </div>
-
     <!-- Image Grid -->
-    <div class="gallery-grid mt-12">
-        <div class="relative">
-            <img src="../assets/images/s54-2.jpg" class="gallery-img">
+    <div class="gallery-grid fade-in">
+        <div class="gallery-item performance">
+            <img src="frontend/assets/images/s54-2.jpg" class="gallery-img">
             <p class="gallery-caption">S54-Swapped E30</p>
         </div>
-        <div class="relative">
-            <img src="../assets/images/m50-2.jpg" class="gallery-img">
+        <div class="gallery-item maintenance">
+            <img src="frontend/assets/images/m50-2.jpg" class="gallery-img">
             <p class="gallery-caption">Routine Oil Change</p>
         </div>
-        <div class="relative">
-            <img src="../assets/images/e36-ute.jpg" class="gallery-img">
+        <div class="gallery-item custom">
+            <img src="frontend/assets/images/e36-ute.jpg" class="gallery-img">
             <p class="gallery-caption">Custom E36 Ute Build</p>
         </div>
     </div>
 
     <!-- Submit Your Build -->
-    <section class="p-8 text-center bg-gray-800 text-white mt-12">
-        <h2 class="text-3xl font-bold">Want Your Car Featured?</h2>
-        <p class="text-lg mt-2">Have a build done at Big Three Performance? Send us photos and we'll feature it in our gallery!</p>
-        <a href="../contact.html" class="mt-4 inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition">
-            Submit Your Build
-        </a>
+    <section class="cta fade-in">
+        <h2>Want Your Car Featured?</h2>
+        <p>Have a build done at Big Three Performance? Send us photos and we'll feature it in our gallery!</p>
+        <a href="contact.html" class="btn">Submit Your Build</a>
     </section>
 
     <script>
-        let currentIndex = 0;
-        let images = document.querySelectorAll(".gallery-img");
-
-        function openLightbox(image) {
-            currentIndex = Array.from(images).indexOf(image);
-            document.getElementById("lightbox-img").src = image.src;
-            document.getElementById("lightbox").classList.remove("hidden");
-        }
-
-        function closeLightbox() {
-            document.getElementById("lightbox").classList.add("hidden");
-        }
-
-        document.addEventListener("keydown", (e) => {
-            if (e.key === "Escape") closeLightbox();
-            if (e.key === "ArrowRight") navigateLightbox(1);
-            if (e.key === "ArrowLeft") navigateLightbox(-1);
+        document.querySelectorAll(".filter-btn").forEach(button => {
+            button.addEventListener("click", () => {
+                document.querySelectorAll(".filter-btn").forEach(btn => btn.classList.remove("active"));
+                button.classList.add("active");
+                const filter = button.getAttribute("data-filter");
+                document.querySelectorAll(".gallery-item").forEach(item => {
+                    item.style.display = (filter === "all" || item.classList.contains(filter)) ? "block" : "none";
+                });
+            });
         });
-
-        function navigateLightbox(direction) {
-            currentIndex = (currentIndex + direction + images.length) % images.length;
-            document.getElementById("lightbox-img").src = images[currentIndex].src;
-        }
     </script>
 
-    <!-- Footer -->
-    <footer class="p-6 bg-gray-900 text-center text-white mt-12">
-        <p>© 2025 Big Three Performance. All Rights Reserved.</p>
+    <!-- Footer with Easter Egg -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Big Three Performance. All Rights Reserved.</p>
+            <p class="hidden-easter-egg" onclick="revealEasterEgg()">Made by Meg</p>
+        </div>
     </footer>
 
+    <script>
+        function revealEasterEgg() {
+            alert("You found the hidden easter egg! Big Three Performance is built with passion and precision!");
+        }
+    </script>
 </body>
 </html>

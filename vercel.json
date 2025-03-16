@@ -8,13 +8,5 @@
     { "source": "/faq", "destination": "/faq.html" },
     { "source": "/contact", "destination": "/contact.html" }
   ],
-  "headers": [
-    {
-      "source": "/frontend/assets/css/(.*)",
-      "headers": [
-        { "key": "Content-Type", "value": "text/css" }
-      ]
-    }
-  ],
   "cleanUrls": true
 }

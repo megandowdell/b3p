@@ -1,99 +1,92 @@
+<!-- ABOUT PAGE - FULLY REVAMPED DESIGN -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Big Three Performance</title>
-    <script type="module" src="../assets/js/main.js"></script> <!-- Relative path to JS -->
-    <link rel="stylesheet" href="../assets/css/output.css"> <!-- Relative path to CSS -->
+    <script type="module" src="frontend/assets/js/main.js"></script>
+    <link rel="stylesheet" href="frontend/assets/css/style.css">
 </head>
-<body class="bg-gray-100 text-gray-900">
-
-    <!-- Sticky Navbar -->
-    <nav id="navbar" class="fixed top-0 left-0 w-full bg-gray-900 text-white flex justify-between items-center p-4 shadow-md z-50">
-        <a href="index.html">  
-            <img src="../assets/images/logo.png" alt="Big Three Performance Logo" class="h-16"> 
-        </a>
-        <ul class="flex space-x-6">
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="about.html" class="nav-link active">About</a></li>
-            <li><a href="services.html" class="nav-link">Services</a></li>
-            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-            <li><a href="projects.html" class="nav-link">Projects</a></li>
-            <li><a href="faq.html" class="nav-link">FAQ</a></li>
-            <li><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="frontend/assets/images/logo.png" alt="Big Three Performance Logo"> 
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="relative w-full h-64 bg-gray-800 flex items-center justify-center">
-        <h1 class="text-5xl font-bold text-white">About Big Three Performance</h1>
+    <header class="hero about">
+        <div class="hero-content">
+            <h1 class="fade-in">MEET LOGAN - THE FOUNDER</h1>
+            <p class="fade-in">Passion. Performance. Precision.</p>
+        </div>
     </header>
 
     <!-- Logan's Story -->
-    <section class="p-8 text-center">
-        <h2 class="text-3xl font-bold text-gray-800">Meet Logan – The Founder</h2>
-        <p class="text-lg text-gray-700 max-w-3xl mx-auto mt-4">
-            Logan has been passionate about performance cars since a young age. With years of experience in the automotive industry, 
-            he turned his love for cars into Big Three Performance. What started as a personal hobby quickly evolved into a full-service 
-            performance shop dedicated to bringing out the best in every vehicle.
-        </p>
-        <img src="../assets/images/logan.JPG" alt="Logan - Founder of Big Three Performance" class="mx-auto mt-6 w-64 rounded shadow-lg">
+    <section class="section founder-story fade-in">
+        <div class="container grid-2">
+            <div class="text-box">
+                <h2>ABOUT LOGAN</h2>
+                <p>Logan has been passionate about performance cars since a young age. With years of experience working on European cars, he turned his love for cars into Big Three Performance. Specializing in BMW builds, he ensures every project is dialed in for maximum performance.</p>
+            </div>
+            <div class="image-box">
+                <img src="frontend/assets/images/logan.JPG" alt="Logan - Founder of Big Three Performance">
+            </div>
+        </div>
     </section>
 
-    <!-- Our Mission -->
-    <section class="p-8 bg-gray-200 text-center">
-        <h2 class="text-3xl font-bold text-gray-800">Our Mission</h2>
-        <p class="text-lg text-gray-700 max-w-3xl mx-auto mt-4">
-            At Big Three Performance, our goal is to deliver top-quality automotive services, whether you're looking for standard 
-            maintenance or high-performance upgrades. We believe in precision, expertise, and pushing the limits of automotive performance.
-        </p>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="p-8 text-center">
-        <h2 class="text-3xl font-bold text-gray-800">Why Choose Big Three Performance?</h2>
-        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-2xl font-semibold text-gray-800">Specialized in BMWs</h3>
-                <p class="text-gray-700 mt-2">
-                    We specialize in early E-chassis BMWs like E30, E36, and E46 models.
-                </p>
+    <!-- Core Values -->
+    <section class="section core-values fade-in">
+        <h2>OUR CORE VALUES</h2>
+        <div class="grid-3">
+            <div class="value-box">
+                <h3>⚙️ Precision</h3>
+                <p>Every build is meticulously crafted to ensure peak performance.</p>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-2xl font-semibold text-gray-800">Performance Focused</h3>
-                <p class="text-gray-700 mt-2">
-                    Turbo kits, engine swaps, and track setups are our specialty.
-                </p>
+            <div class="value-box">
+                <h3>🔥 Passion</h3>
+                <p>Big Three Performance is driven by an obsession with performance.</p>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-2xl font-semibold text-gray-800">Quality Guaranteed</h3>
-                <p class="text-gray-700 mt-2">
-                    We use top-tier parts and industry-leading techniques to ensure the best results.
-                </p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-2xl font-semibold text-gray-800">Customer-First Approach</h3>
-                <p class="text-gray-700 mt-2">
-                    Every build is tailored to the owner’s vision for their car.
-                </p>
+            <div class="value-box">
+                <h3>🏆 Integrity</h3>
+                <p>We take pride in honest work and delivering high-quality results.</p>
             </div>
         </div>
     </section>
 
     <!-- Contact CTA -->
-    <section class="p-8 bg-gray-800 text-center text-white">
-        <h2 class="text-3xl font-bold">Want to Work With Us?</h2>
-        <p class="text-lg mt-2">Reach out and let’s talk about your build.</p>
-        <a href="contact.html" class="mt-4 inline-block bg-red-500 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition">
-            Contact Logan
-        </a>
+    <section class="cta fade-in">
+        <h2>WANT TO WORK WITH US?</h2>
+        <p>Let’s talk about your next build. Contact us today.</p>
+        <a href="contact.html" class="btn">Contact Logan</a>
     </section>
 
-    <!-- Footer -->
-    <footer class="p-6 bg-gray-900 text-center text-white mt-12">
-        <p>© 2025 Big Three Performance. All Rights Reserved.</p>
+    <!-- Footer with Easter Egg -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Big Three Performance. All Rights Reserved.</p>
+            <p class="hidden-easter-egg" onclick="revealEasterEgg()">Made by Meg</p>
+        </div>
     </footer>
 
+    <script>
+        function revealEasterEgg() {
+            alert("You found the hidden easter egg! Big Three Performance is built with passion and precision!");
+        }
+    </script>
 </body>
 </html>

@@ -1,11 +1,12 @@
+<!-- FAQ PAGE - BIG THREE PERFORMANCE -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ - Big Three Performance</title>
-    <script type="module" src="../assets/js/main.js"></script>
-    <link rel="stylesheet" href="../assets/css/output.css">
+    <script type="module" src="frontend/assets/js/main.js"></script>
+    <link rel="stylesheet" href="frontend/assets/css/style.css">
     <script>
         function toggleFAQ(id) {
             const answer = document.getElementById(id);
@@ -13,101 +14,98 @@
         }
     </script>
 </head>
-<body class="bg-gray-100 text-gray-900">
-
+<body>
+    
     <!-- Navbar -->
-    <nav id="navbar" class="fixed top-0 left-0 w-full bg-gray-900 text-white flex justify-between items-center p-4 shadow-md z-50">
-        <a href="index.html">
-            <img src="../assets/images/logo.png" alt="Big Three Performance Logo" class="h-16"> 
-        </a>
-        <ul class="flex space-x-6">
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="about.html" class="nav-link">About</a></li>
-            <li><a href="services.html" class="nav-link">Services</a></li>
-            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-            <li><a href="projects.html" class="nav-link">Projects</a></li>
-            <li><a href="faq.html" class="nav-link active">FAQ</a></li>
-            <li><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="frontend/assets/images/logo.png" alt="Big Three Performance Logo"> 
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="faq.html" class="active">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="relative w-full h-64 bg-gray-800 flex items-center justify-center">
-        <h1 class="text-5xl font-bold text-white">Frequently Asked Questions</h1>
+    <header class="hero faq">
+        <h1 class="fade-in">FREQUENTLY ASKED QUESTIONS</h1>
     </header>
 
     <!-- FAQ Section -->
-    <section class="p-8 text-center">
-        <h2 class="text-3xl font-bold text-gray-800">Got Questions? We’ve Got Answers.</h2>
-        <p class="text-lg text-gray-700 max-w-2xl mx-auto mt-2">
-            Here are some of the most common questions we receive about our services.
-        </p>
+    <section class="section fade-in">
+        <h2>GOT QUESTIONS? WE'VE GOT ANSWERS.</h2>
+        <p>Here are some of the most common questions we receive about our services.</p>
 
-        <div class="max-w-2xl mx-auto mt-6">
+        <div class="faq-container">
             <!-- Question 1 -->
-            <div class="border-b p-4">
-                <button onclick="toggleFAQ('faq1')" class="w-full text-left text-lg font-semibold text-gray-900 flex justify-between">
+            <div class="faq-item">
+                <button onclick="toggleFAQ('faq1')" class="faq-question">
                     Do you specialize in BMWs only? <span>+</span>
                 </button>
-                <p id="faq1" class="hidden mt-2 text-gray-700">
+                <p id="faq1" class="faq-answer hidden">
                     Logan focuses on European cars, with a specialty in BMWs, particularly E30, E36, and E46 models. However, he does take on select projects for other makes—reach out for more details!
                 </p>
             </div>
 
             <!-- Question 2 -->
-            <div class="border-b p-4">
-                <button onclick="toggleFAQ('faq2')" class="w-full text-left text-lg font-semibold text-gray-900 flex justify-between">
-                    What’s the difference between E30, E36, and E46 BMWs? <span>+</span>
+            <div class="faq-item">
+                <button onclick="toggleFAQ('faq2')" class="faq-question">
+                    What performance parts can you install? <span>+</span>
                 </button>
-                <p id="faq2" class="hidden mt-2 text-gray-700">
-                    The E30, E36, and E46 are three generations of the BMW 3 Series, each with unique characteristics. The E30 is known for its classic, lightweight chassis, the E36 introduced a more refined design, and the E46 is considered one of the best-handling BMWs of all time. Logan specializes in modifications for all three.
+                <p id="faq2" class="faq-answer hidden">
+                    We install performance parts such as exhaust systems, intakes, coilovers, suspension upgrades, engine tunes, and turbo kits. If you have a specific part in mind, contact us!
                 </p>
             </div>
 
             <!-- Question 3 -->
-            <div class="border-b p-4">
-                <button onclick="toggleFAQ('faq3')" class="w-full text-left text-lg font-semibold text-gray-900 flex justify-between">
-                    Do you offer custom fabrication for BMWs? <span>+</span>
+            <div class="faq-item">
+                <button onclick="toggleFAQ('faq3')" class="faq-question">
+                    Do you offer ECU tuning? <span>+</span>
                 </button>
-                <p id="faq3" class="hidden mt-2 text-gray-700">
-                    Yes! Logan has completed custom fabrication projects such as an E36 Ute conversion. If you have a specific build idea in mind, reach out to discuss feasibility and pricing.
+                <p id="faq3" class="faq-answer hidden">
+                    Yes! We provide ECU tuning for performance gains and improved efficiency. Reach out to discuss your specific tuning needs.
                 </p>
             </div>
 
             <!-- Question 4 -->
-            <div class="border-b p-4">
-                <button onclick="toggleFAQ('faq4')" class="w-full text-left text-lg font-semibold text-gray-900 flex justify-between">
-                    Can you install aftermarket performance parts? <span>+</span>
+            <div class="faq-item">
+                <button onclick="toggleFAQ('faq4')" class="faq-question">
+                    Can you help with track car setups? <span>+</span>
                 </button>
-                <p id="faq4" class="hidden mt-2 text-gray-700">
-                    Absolutely! Whether it’s a turbo kit, coilovers, standalone ECU, or any other upgrade, Logan can install and tune most performance parts. Contact him for specifics.
+                <p id="faq4" class="faq-answer hidden">
+                    Absolutely! We can install coilovers, brakes, and safety equipment to prepare your car for the track.
                 </p>
-            </div>
-
-            <!-- Question 5 -->
-            <div class="border-b p-4">
-                <button onclick="toggleFAQ('faq5')" class="w-full text-left text-lg font-semibold text-gray-900 flex justify-between">
-                    Can you help with drift car setup? <span>+</span>
-                </button>
-                <p id="faq5" class="hidden mt-2 text-gray-700">
-                    Yes! Logan has experience building and tuning drift cars, including suspension setup, angle kits, and power upgrades. If you’re looking to dial in your drift car, reach out!
-                </p>
-            </div>
-
-            <!-- Contact Call to Action -->
-            <div class="mt-8">
-                <p class="text-lg text-gray-700">Still have questions? Contact us and Logan will be happy to help!</p>
-                <a href="contact.html" class="mt-4 inline-block bg-red-500 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition">
-                    Contact Us
-                </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="p-6 bg-gray-900 text-center text-white mt-12">
-        <p>© 2025 Big Three Performance. All Rights Reserved.</p>
+    <!-- Contact CTA -->
+    <section class="cta fade-in">
+        <h2>Still Have Questions?</h2>
+        <p>Contact us and Logan will be happy to help!</p>
+        <a href="contact.html" class="btn">Contact Us</a>
+    </section>
+
+    <!-- Footer with Easter Egg -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Big Three Performance. All Rights Reserved.</p>
+            <p class="hidden-easter-egg" onclick="revealEasterEgg()">Made by Meg</p>
+        </div>
     </footer>
 
+    <script>
+        function revealEasterEgg() {
+            alert("You found the hidden easter egg! Big Three Performance is built with passion and precision!");
+        }
+    </script>
 </body>
 </html>

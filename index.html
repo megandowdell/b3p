@@ -1,92 +1,110 @@
+<!-- HOME PAGE - BIG THREE PERFORMANCE -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Big Three Performance</title>
-    <script type="module" src="../assets/js/main.js"></script>
-    <link rel="stylesheet" href="../assets/css/output.css">
+    <script type="module" src="frontend/assets/js/main.js"></script>
+    <link rel="stylesheet" href="frontend/assets/css/style.css">
 </head>
-<body class="bg-gray-100 text-gray-900">
-
-    <!-- Sticky Navbar -->
-    <nav id="navbar" class="fixed top-0 left-0 w-full bg-gray-900 text-white flex justify-between items-center p-4 shadow-md z-50 transition-all duration-300">
-        <a href="../index.html">
-            <img src="../assets/images/logo.png" alt="Big Three Performance Logo" class="h-20 transition-all duration-300">
-        </a>
-        <ul class="flex space-x-6">
-            <li><a href="../index.html" class="nav-link">Home</a></li>
-            <li><a href="../about.html" class="nav-link">About</a></li>
-            <li><a href="../services.html" class="nav-link">Services</a></li>
-            <li><a href="../gallery.html" class="nav-link">Gallery</a></li>
-            <li><a href="../projects.html" class="nav-link">Projects</a></li>
-            <li><a href="../faq.html" class="nav-link">FAQ</a></li>
-            <li><a href="../contact.html" class="nav-link">Contact</a></li>
-        </ul>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="frontend/assets/images/logo.png" alt="Big Three Performance Logo"> 
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="relative w-full h-[90vh] bg-gray-900 flex flex-col items-center justify-center text-center px-4"
-        style="background: url('../assets/images/driftcarfront.jpg') center/cover no-repeat;">
-        <img src="../assets/images/logo1.png" alt="Big Three Performance Logo" 
-            style="height: 800px; width: auto; max-width: 90vw;" class="mb-0">  
-        <div class="absolute bottom-24 text-center w-full">
-            <p class="text-white text-xl font-semibold mb-2">High-Performance BMW & European Car Builds</p>
-            <a href="../contact.html" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition">
-                Contact Us
-            </a>
-        </div>
-
-        <!-- Scroll Down Arrow -->
-        <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2">
-            <a href="#services">
-                <img src="../assets/images/down-arrow.png" class="h-10 animate-bounce">
-            </a>
+    <header class="hero home">
+        <div class="hero-content">
+            <h1 class="fade-in">UNLEASH THE POWER OF YOUR BUILD</h1>
+            <p class="fade-in">Precision Performance for BMW & European Cars</p>
+            <a href="contact.html" class="btn fade-in">Get a Free Quote</a>
         </div>
     </header>
 
-    <!-- Services Section -->
-    <section id="services" class="p-12 text-center bg-gray-200">
-        <h2 class="text-3xl font-bold text-gray-900">Our Services</h2>
-        <p class="text-lg text-gray-700 max-w-3xl mx-auto">
-            From routine maintenance to high-performance modifications, we do it all.
-        </p>
-        <a href="../services.html" class="mt-6 inline-block text-lg text-blue-600 hover:underline">View Services →</a>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="p-8 bg-gray-800 text-center text-white">
-        <h2 class="text-3xl font-bold">Have Questions? Get in Touch!</h2>
-        <p class="text-lg mt-2">Whether you're looking for performance upgrades, maintenance, or a custom build, reach out to Logan today.</p>
-        <a href="../contact.html" class="mt-4 inline-block bg-red-500 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition">
-            Contact Logan
-        </a>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="p-12 text-center bg-gray-100">
-        <h2 class="text-3xl font-bold text-gray-900">Featured Projects</h2>
-        <p class="text-lg text-gray-700 max-w-3xl mx-auto">
-            Explore Logan’s most ambitious builds, including full engine swaps and turbocharged setups.
-        </p>
-        <a href="../projects.html" class="mt-6 inline-block text-lg text-blue-600 hover:underline">View Projects →</a>
-    </section>
-
-    <!-- Gallery Section -->
-    <section class="p-12 text-center bg-gray-800 text-white">
-        <h2 class="text-3xl font-bold">Latest Builds</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
-            <img src="../assets/images/s54-1.jpg" class="rounded shadow-md w-full h-auto hover:scale-105 transition">
-            <img src="../assets/images/m50-1.jpg" class="rounded shadow-md w-full h-auto hover:scale-105 transition">
-            <img src="../assets/images/e36-ute.jpg" class="rounded shadow-md w-full h-auto hover:scale-105 transition">
+    <!-- Why Choose Us Section -->
+    <section class="section why-choose fade-in">
+        <h2>WHY BIG THREE PERFORMANCE?</h2>
+        <div class="features-grid">
+            <div class="feature-box">
+                <h3>Expert Engineering</h3>
+                <p>Every build is meticulously tuned for maximum performance.</p>
+            </div>
+            <div class="feature-box">
+                <h3>BMW & Euro Specialists</h3>
+                <p>Decades of experience in E30, E36, and E46 builds.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Proven Track Builds</h3>
+                <p>We don’t just build cars—we push them to their limits.</p>
+            </div>
         </div>
-        <a href="../gallery.html" class="mt-6 inline-block text-lg text-blue-400 hover:underline">View Full Gallery →</a>
     </section>
 
-    <!-- Footer -->
-    <footer class="p-6 bg-gray-900 text-center text-white mt-12">
-        <p>© 2025 Big Three Performance. All Rights Reserved.</p>
+    <!-- Featured Builds -->
+    <section class="section featured-builds fade-in">
+        <h2>FEATURED BUILDS</h2>
+        <div class="projects-carousel">
+            <div class="project-item">
+                <img src="frontend/assets/images/s54-1.jpg" alt="S54 E30">
+                <h3>S54-Swapped E30</h3>
+            </div>
+            <div class="project-item">
+                <img src="frontend/assets/images/m50-1.jpg" alt="M50 Turbo Drift Car">
+                <h3>M50 Turbo Drift Car</h3>
+            </div>
+        </div>
+        <a href="projects.html" class="btn">View More Builds</a>
+    </section>
+
+    <!-- Instagram & YouTube Integration -->
+    <section class="section social-media fade-in">
+        <h2>FOLLOW THE JOURNEY</h2>
+        <div class="social-container">
+            <div class="instagram-feed">
+                <h3>Instagram</h3>
+                <iframe src="https://www.instagram.com/big3performance/embed" width="100%" height="400px"></iframe>
+            </div>
+            <div class="youtube-feed">
+                <h3>YouTube</h3>
+                <iframe width="100%" height="400px" src="https://www.youtube.com/embed/latest_video_id" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta fade-in">
+        <h2>READY TO BUILD?</h2>
+        <a href="contact.html" class="btn">Let's Get Started</a>
+    </section>
+
+    <!-- Footer with Easter Egg -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Big Three Performance. All Rights Reserved.</p>
+            <p class="hidden-easter-egg" onclick="revealEasterEgg()">Made by Meg</p>
+        </div>
     </footer>
 
+    <script>
+        function revealEasterEgg() {
+            alert("You found the hidden easter egg! Big Three Performance is built with passion and precision!");
+        }
+    </script>
 </body>
 </html>

@@ -1,83 +1,94 @@
+<!-- SERVICES PAGE - BIG THREE PERFORMANCE -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services - Big Three Performance</title>
-    <script type="module" src="../assets/js/main.js"></script>
-    <link rel="stylesheet" href="../assets/css/output.css">
+    <script type="module" src="frontend/assets/js/main.js"></script>
+    <link rel="stylesheet" href="frontend/assets/css/style.css">
 </head>
-<body class="bg-gray-100 text-gray-900">
-
+<body>
+    
     <!-- Navbar -->
-    <nav id="navbar" class="fixed top-0 left-0 w-full bg-gray-900 text-white flex justify-between items-center p-4 shadow-md z-50">
-        <a href="../index.html">
-            <img src="../assets/images/logo.png" alt="Big Three Performance Logo" class="h-16">
-        </a>
-        <ul class="flex space-x-6">
-            <li><a href="../index.html" class="nav-link">Home</a></li>
-            <li><a href="../about.html" class="nav-link">About</a></li>
-            <li><a href="../services.html" class="nav-link active">Services</a></li>
-            <li><a href="../gallery.html" class="nav-link">Gallery</a></li>
-            <li><a href="../projects.html" class="nav-link">Projects</a></li>
-            <li><a href="../faq.html" class="nav-link">FAQ</a></li>
-            <li><a href="../contact.html" class="nav-link">Contact</a></li>
-        </ul>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="frontend/assets/images/logo.png" alt="Big Three Performance Logo"> 
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="relative w-full h-64 bg-gray-800 flex items-center justify-center">
-        <h1 class="text-5xl font-bold text-white">Our Services</h1>
+    <header class="hero services">
+        <h1 class="fade-in">OUR SERVICES</h1>
     </header>
 
     <!-- Services Section -->
-    <section class="p-8 text-center">
-        <h2 class="text-4xl font-bold text-gray-800">What We Offer</h2>
-        <p class="text-lg text-gray-700 max-w-2xl mx-auto mt-2">
-            From standard maintenance to full-performance builds, we've got you covered.
-        </p>
+    <section class="section services-section fade-in">
+        <div class="container">
+            <h2>WHAT WE OFFER</h2>
+            <p>From routine maintenance to performance upgrades, we've got you covered.</p>
 
-        <div class="mt-8 max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <div class="bg-white p-6 rounded-lg shadow-md hover:scale-105 transition text-center">
-                <h3 class="text-2xl font-semibold text-gray-800">Oil Changes</h3>
-                <p class="text-gray-700 mt-2">Routine oil changes to keep your engine healthy.</p>
+            <div class="services-grid">
+                <div class="service-box">
+                    <h3>Performance Part Installation</h3>
+                    <p>We install intakes, exhausts, intercoolers, turbo kits, and more.</p>
+                </div>
+                <div class="service-box">
+                    <h3>ECU Tuning & Engine Remapping</h3>
+                    <p>Unlock hidden power and efficiency with professional ECU tuning.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Suspension & Brake Upgrades</h3>
+                    <p>Upgrade your car’s handling with coilovers, big brake kits, and track setups.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Routine Maintenance & Diagnostics</h3>
+                    <p>Oil changes, brake jobs, check engine light diagnostics, and more.</p>
+                </div>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow-md hover:scale-105 transition text-center">
-                <h3 class="text-2xl font-semibold text-gray-800">Brake Jobs</h3>
-                <p class="text-gray-700 mt-2">Brake inspections, pad replacements, and upgrades.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md hover:scale-105 transition text-center">
-                <h3 class="text-2xl font-semibold text-gray-800">Diagnostics</h3>
-                <p class="text-gray-700 mt-2">Check engine lights, troubleshooting, and tuning.</p>
-            </div>
-        </div>
-
-        <!-- Performance Upgrades -->
-        <div class="mt-12 max-w-3xl mx-auto text-center">
-            <h3 class="text-3xl font-semibold text-gray-800">Performance Upgrades</h3>
-            <p class="text-lg mt-2 text-gray-700">
-                We specialize in high-performance tuning, swaps, and custom builds.
-            </p>
-            <ul class="list-disc mt-4 text-lg text-left mx-auto max-w-md">
-                <li>Turbo & Supercharger Kits</li>
-                <li>Custom Fabrication</li>
-                <li>Engine Swaps</li>
-                <li>ECU Tuning & Standalone Systems</li>
-                <li>Track-Ready Suspension Setups</li>
-            </ul>
-        </div>
-
-        <div class="mt-12">
-            <a href="../contact.html" class="bg-red-500 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition">
-                Get a Free Quote
-            </a>
+            <a href="contact.html" class="btn">Get a Free Quote</a>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="p-6 bg-gray-900 text-center text-white mt-12">
-        <p>© 2025 Big Three Performance. All Rights Reserved.</p>
+    <!-- Featured Performance Builds -->
+    <section class="section featured-builds fade-in">
+        <h2>FEATURED BUILDS</h2>
+        <div class="projects-grid">
+            <div class="project-box">
+                <h3>S54-Swapped E30</h3>
+                <p>A high-revving S54 swap into an iconic E30 chassis.</p>
+            </div>
+            <div class="project-box">
+                <h3>M50 Turbo Drift Car</h3>
+                <p>Built for high-speed slides with a turbocharged M50 engine.</p>
+            </div>
+        </div>
+        <a href="projects.html" class="btn">View More Builds</a>
+    </section>
+
+    <!-- Footer with Easter Egg -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Big Three Performance. All Rights Reserved.</p>
+            <p class="hidden-easter-egg" onclick="revealEasterEgg()">Made by Meg</p>
+        </div>
     </footer>
 
+    <script>
+        function revealEasterEgg() {
+            alert("You found the hidden easter egg! Big Three Performance is built with passion and precision!");
+        }
+    </script>
 </body>
 </html>
